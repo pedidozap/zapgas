@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- SEÇÃO DE CABEÇALHO-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./cardapio.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <title>ZapGás</title>
+
+</head>
+
+<body>
+    <!-- SEÇÃO DE MENU-->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="./image/logozapgas.png" alt="" />
+                    <h3>ZapGás</h3>
+                </div>
+            </a>
+            <a class="icon_cart_dois" href="#carrinho">
+                <i class="bi bi-cart2 cart-icon-menu"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav list-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/digitalpacheco/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://leopachecof.github.io/portifolio/" target="_blank"><i
+                                class="bi bi-globe2"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- SEÇÃO DE PRODUTOS-->
+    <section class="cardapio" id="cardapio">
+        <div class="accordion" id="accordionExample" >
+
+            
+            <!-- Categoria: Água -->
+            <div class="categoria" id="categoria-Água">
+                <div class="card categoria">
+                    <div class="card-header" id="headingÁgua">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseÁgua" aria-expanded="true" aria-controls="collapseÁgua">
+                                <!-- <h3>Água mineral</h3> -->
+                                <img src="./image/categoria-agua.png" alt="" style="max-width: 70rem">
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseÁgua" class="collapse" aria-labelledby="headingÁgua" data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            <!-- Produto 1 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/cascatai20L.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Água Mineral Cascataí 20L</h5>
+                                    <p class="description">Garrafão 20 L retornável sem gás</p>
+                                    <p class="price">R$ 20.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Produto 2 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/cascatai10L.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Água Mineral Cascataí 10L</h5>
+                                    <p class="description">Garrafão 10 L retornável sem gás</p>
+                                    <p class="price">R$ 12.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                            <!-- Produto 3 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/mineral20L.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Água Mineral 20L</h5>
+                                    <p class="description">Garrafão 20 L retornável sem gás</p>
+                                    <p class="price">R$ 16.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Gelo -->
+            <div class="categoria" id="categoria-gelo">
+                <div class="card categoria">
+                    <div class="card-header" id="headinggelo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsegelo" aria-expanded="true" aria-controls="collapsegelo">
+                                <!-- <h3>Gelo</h3> -->
+                                <img src="./image/categoria-gelo.png" alt="" style="max-width: 70rem">
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapsegelo" class="collapse" aria-labelledby="headinggelo" data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            <!-- Produto 1 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/gelo5kg.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gelo Filtrado 5kg</h5>
+                                    <!-- <p class="description">Garrafão 20 L retornável sem gás</p> -->
+                                    <p class="price">R$ 15.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+                            
+                            <!-- Produto 2 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/gelo1kg.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gelo Filtrado 1kg</h5>
+                                    <!-- <p class="description">Garrafão 10 L retornável sem gás</p> -->
+                                    <p class="price">R$ 8.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                            <!-- Produto 3 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/gelo5kg.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gelo 5kg</h5>
+                                    <!-- <p class="description">Saco de 5kg</p> -->
+                                    <p class="price">R$ 10.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Gás -->
+            <div class="categoria" id="categoria-gas">
+                <div class="card categoria">
+                    <div class="card-header" id="headinggas">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                data-target="#collapsegas" aria-expanded="true" aria-controls="collapsegas">
+                                <!-- <h3>Gás</h3> -->
+                                <img src="./image/categoria-gas.png" alt="" style="max-width: 70rem">
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapsegas" class="collapse" aria-labelledby="headinggas"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            <!-- Produto 1 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/p13cinza.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gás P13</h5>
+                                    <p class="description">Gás Convencional de cozinha 13kg</p>
+                                    <p class="price">R$ 110.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                            <!-- Produto 2 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/p20cinza.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gás P20</h5>
+                                    <p class="description">Gás especifico para utilização em empilhadeiras</p>
+                                    <p class="price">R$ 195.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                            <!-- Produto 3 -->
+                            <div class="cardProduto cardSoma">
+                                <div class="product-img">
+                                    <img src="./image/p45cinza.png" alt="Imagem do Produto">
+                                </div>
+                                <div class="product-info">
+                                    <h5 class="title">Gás P45</h5>
+                                    <p class="description">Gás utilizado em cozinhas industriais</p>
+                                    <p class="price">R$ 435.00</p>
+                                    <button type="button" class="btn-add-to-cart">Adicionar ao Carrinho</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CARRINHO DE COMPRAS -->
+    <section class="carrinho" id="carrinho">
+        <div class="card-carrinho">
+            <h3>Carrinho de Compras</h3><br>
+            <div class="btn-carrinho">
+                <div class="lista-carrinho">
+                    <div class="divNomeProduto"></div>
+                    <div class="divPrecoTotal"></div>
+                    <div class="divBotoes"></div>
+                </div>
+            </div>
+            <p id="total">Total: R$ 0.00</p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CHECKOUT -->
+    <section class="checkout-base" id="checkout1">
+        <div class="checkout-form mb-3">
+            <h3>Fechar Pedido</h3>
+            <section class="checkout" id="checkout">
+                <div class="card-checkout">
+                    <!-- <h1>Checkout</h1> -->
+                    <form id="checkout-form">
+                        <label for="nome">Nome:<span class="required">*</span></label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="endereco">Endereço:<span class="required">*</span></label>
+                        <input type="text" id="endereco" name="endereco" required>
+
+                        <label for="referencia">Ponto de Referência:</label>
+                        <input type="text" id="referencia" name="referencia">
+
+                        <label for="pagamento">Forma de Pagamento:<span class="required">*</span></label>
+                        <select name="pagamento" id="pagamento" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                            <option value="Cartão de Crédito">Cartão de Crédito</option>
+                            <option value="Cartão de Débito">Cartão de Débito</option>
+                            <option value="PIX">Pix</option>
+                        </select>
+
+                        <div class="form-group" id="trocoField" style="display: none;">
+                            <label for="troco">Troco para:</label>
+                            <input type="text" id="troco" name="troco">
+                        </div>
+
+                        <div id="acrescimoCartao" style="display: none; font-style: italic; color: red; font-size: smaller;">
+                            Compras pelo Cartão terá um acréscimo de: R$ 2,00
+                        </div><br>
+                        
+                          
+
+                        <!-- //////////////////////////////////////////////////////////Início de Forma de Entrega -->
+                        <!-- Início de Forma de Entrega -->
+
+                        <!-- Campo de opção de entrega -->
+                        <label for="opcaoentrega">Opção de Entrega:<span class="required">*</span></label>
+                        <select name="opcaoentrega" id="opcaoentrega" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="retirada">Retirada na Loja</option>
+                            <option value="entrega">Entrega</option>
+                        </select>
+
+                        <!-- Campo de endereço da loja -->
+                        <div class="form-group" id="enderecoloja" style="display: none;">
+                            <label for="endereco">Endereço da Loja: Rua Exemplo, 123 - Bairro - Cidade</label>
+                        </div>
+
+                        <!-- Campo de seleção de bairro para entrega -->
+                        <div class="form-group" id="selecionebairro" style="display: none;">
+                            <label for="bairro">Selecione o Bairro:</label>
+                            <select name="bairro" id="bairro" required>
+                                <option value="">Selecione o bairro</option>
+                                <option value="Centro">Centro</option>
+                                <option value="Bairro A">Bairro A</option>
+                                <option value="Bairro B">Bairro B</option>
+                                <!-- Adicione mais bairros conforme necessário -->
+                            </select>
+                        </div>
+
+                        <!-- Campo de taxa de entrega -->
+                        <div class="form-group" id="taxaentrega" style="display: none;">
+                            <label for="taxaentrega">Taxa de Entrega: R$ <span id="valortaxaentrega"></span></label>
+                        </div>
+
+
+                        <!-- Fim de Forma de Entrega -->
+
+                        <!--//////////////////////////////////////////////////////// Fim de Forma de Entrega -->
+
+                        <br>
+                        <label for="observacao">Observação:</label>
+                        <textarea id="observacao" name="observacao" rows="4" cols="50"
+                            maxlength="200"></textarea><br><br>
+
+                        <div class="checkout-final">
+                            <button class="btn-finalizar-compra" id="finalizar-compra">
+                                Fazer Pedido
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATOS -->
+    <section class="contatos" id="contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-secao">
+            <a class="bi bi-whatsapp"
+                href="https://api.whatsapp.com/send?phone=5521970129970&text=Ol%C3%A1%20tudo%20bem?%20Digite%20sua%20mensagem."
+                target="_blank"><span>(21) 97012-9970</span></a>
+            <a class="bi bi-instagram" href="https://www.instagram.com/digitalpacheco/"
+                target="_blank"><span>@digitalpacheco</span></a>
+            <a class="bi bi-globe2" href="https://leopachecof.github.io/portifolio/"
+                target="_blank"><span>site</span></a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE RODAPÉ -->
+    <footer>
+        <h4>Desenvolvido por digitalpacheco®</h4>
+    </footer>
+
+
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

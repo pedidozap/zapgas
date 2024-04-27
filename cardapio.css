@@ -1,0 +1,411 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* Reset de estilos e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+
+/* ******************       INÍCIO NAVBAR */
+.navbar {
+    display: flex;
+    background-color: #1e8dbc;
+    position: fixed; /* Adiciona posição fixa */
+    top: 0; /* Coloca a navbar no topo da página */
+    width: 100%; /* Define a largura total da navbar */
+    z-index: 1000; /* Ajusta a ordem de empilhamento */
+}
+.navbar-brand{
+    width: 30%;
+}
+/* ******************       FIM NAVBAR */
+
+
+/* ******************       INÍCIO ÍCONE DE CARRINHO DA NAVBAR CENTRALIZADO*/
+/* Estilo para a contagem de itens no carrinho no menu */
+.cart-count {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_cart_dois {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px; /* Adiciona um espaçamento entre o ícone e o texto */
+    display: flex;
+    align-items: center;
+}
+/* Ajusta o tamanho do ícone */
+.icon_cart_dois i {
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+    margin-right: 5px;
+}
+/* ******************        FIM CARRINHO CENTRALIZADO*/
+
+
+
+
+/* ******************       INÍCIO Menu do Toggler */
+.navbar-collapse{
+    display: flex;
+    width: 70%; /*margem da direita*/
+    justify-content:center ; /*menu centralizado*/
+}
+.navbar-toggler{
+    margin: 0 20px;
+}
+.logo {
+    width: 60px;
+    padding: 4px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logo h3 {
+    color: white;
+    margin: auto;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+}
+.navbar .list-menu {
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.navbar .list-menu a {
+    color: white;
+    font-size: 1.8rem;
+    transition: all 200ms ease-in;
+    text-decoration: none;
+}
+.navbar .list-menu a:hover {
+    background-color: #333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Cor de fundo do dropdown */
+    padding: 10px;
+    border-radius: 5px;
+}
+.dropdown:hover ul {
+    display: block;
+}
+/* ******************       FIM Menu do Toggler */
+
+/* ******************       INÍCIO CATEGORIA - Divisão de categorias no body */
+.categoria {
+    width: 100vw;
+    max-width: 600px;
+    border-radius: 3px;
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+.categoria img{
+    width: 100%;
+}
+.btn h3{
+    font-size: medium;
+    color: #969696;
+    text-decoration:none;
+}
+.categoria {
+    background-color: rgb(241, 241, 239);
+    text-decoration: none;
+}
+/* ******************        fim CATEGORIA */
+
+/* ******************        Início CARDÁPIO */
+
+.cardapio{                 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 12vh;
+    background-color: rgb(237, 238, 230);
+    margin-top: 15px;
+}
+
+
+/* ******************        Fim CARDÁPIO */
+
+
+/* início CARRINHO*/
+.carrinho{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(237, 238, 230);
+    
+}
+.card-carrinho{
+    width: 100vw;
+    max-width: 600px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgb(241, 241, 239);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(69, 69, 69, 0.449);
+}
+.lista-carrinho {
+    font-size: 1.3rem !important;
+}
+.carrinho p {
+    font-size: 2rem;
+}
+.carrinho h3 {
+    font-size: 2rem;
+}
+.btn-carrinho div{
+    font-size: 1.5rem;
+    width: 100%;
+
+}
+.lista-carrinho {
+    display:inline-table;
+}
+.lista-carrinho td{
+    border-bottom: #a4a4a47c solid 1px ;
+    padding: 5px;
+}
+.lista-carrinho button{
+    margin: 5px;
+}
+#total {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+/* fim CARRINHO*/
+
+/* Início do Checkout */
+.checkout-base{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(237, 238, 230);
+    /* width: auto; */
+}
+.checkout-form{
+    width: 100vw;
+    max-width: 600px;
+    display: grid;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 20px;
+    background-color: rgb(241, 241, 239);
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgba(69, 69, 69, 0.449);
+}
+.checkout-form h3{
+    text-align: center;
+}
+
+.card-checkout form label {
+    display: block; /* Mostra os labels em uma nova linha */
+}
+.card-checkout form input,
+.card-checkout form select {
+    width: 100%; /* Faz os inputs e selects ocuparem 100% da largura */
+    margin-bottom: 10px; /* Adiciona um espaço entre os inputs */
+}
+
+/* Borda dos imputs */
+
+/* CSS para estilizar os campos de input */
+.card-checkout form input,
+.card-checkout form select {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* CSS para estilizar o campo de "Observação" */
+.card-checkout form #observacao {
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: vertical;
+    max-width: 100%;
+}
+/* Botão Finalizar */
+#finalizar-compra {
+    background-color: #46a54c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+#finalizar-compra:hover,
+#finalizar-compra:active {
+    background-color: #16581b;
+}
+.checkout-final{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Fim do Checkout */
+
+
+/* Início CONTATOS */
+.contatos {
+    /* width: 100%; */
+    background-color: #1e8dbc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.contatos span {
+    font-size: 1.5rem;
+
+}
+.contatos-secao {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.contatos-secao div {
+    cursor: pointer;
+}
+.contatos-secao a {
+    color: white;
+    text-decoration: none;
+}
+.contatos-secao a span {
+    padding: 5px;
+}
+.contatos-secao a:hover {
+    color: #ffc506;
+}
+/* fim CONTATOS */
+
+/* FOOTER */
+footer {
+    height: 5vh;
+    background-color: #1e8dbc;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* novo card */
+.cardProduto {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.product-img {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    width: 70%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 11px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-info .price {
+    color: #46a54c;
+    margin: 5px;
+}
+
+.btn-add-to-cart {
+    width: 80%;
+    padding: 8px 0;
+    background-color: #46a54c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #26902f;
+}
+.btn-add-to-cart:active {
+    background-color: #7f857f;
+    transform: scale(1.1);
+}
+
+
